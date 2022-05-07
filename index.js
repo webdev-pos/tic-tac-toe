@@ -50,15 +50,15 @@ let grids = {
 let xTurn = true;
 
 function reset() {
-    gridItem1.textContent = "Click"
-    gridItem2.textContent = "Click"
-    gridItem3.textContent = "Click"
-    gridItem4.textContent = "Click"
-    gridItem5.textContent = "Click"
-    gridItem6.textContent = "Click"
-    gridItem7.textContent = "Click"
-    gridItem8.textContent = "Click"
-    gridItem9.textContent = "Click"
+    gridItem1.textContent = "Click";
+    gridItem2.textContent = "Click";
+    gridItem3.textContent = "Click";
+    gridItem4.textContent = "Click";
+    gridItem5.textContent = "Click";
+    gridItem6.textContent = "Click";
+    gridItem7.textContent = "Click";
+    gridItem8.textContent = "Click";
+    gridItem9.textContent = "Click";
     grids.grid1.value = "";
     grids.grid1.used = false;
     grids.grid2.value = "";
@@ -82,20 +82,20 @@ function reset() {
 function xWin() {
     console.log("Player X Won");
     xTurn = true;
-    reset()
+    reset();
 }
 
 function oWin() {
     console.log("Player O Won");
     xTurn = true;
-    reset()
+    reset();
 }
 
 function checkIfTie() {
     if((grids.grid1.value != "") && (grids.grid2.value != "") && (grids.grid3.value != "") && (grids.grid4.value != "") && (grids.grid5.value != "") && (grids.grid6.value != "") && (grids.grid7.value != "") && (grids.grid8.value != "") && (grids.grid9.value != "")) {
         console.log("Tie");
         xTurn = true;
-        reset()
+        reset();
     }
 }
 
@@ -159,7 +159,7 @@ function checkIfOWin() {
 gridItem1.addEventListener("click", function() {
     if(xTurn === true) {
         if(grids.grid1.used === false) {
-            gridItem1.textContent = "X"
+            gridItem1.textContent = "X";
             grids.grid1.value = "x";
             grids.grid1.used = true;
             console.log(grids.grid1);
@@ -168,7 +168,7 @@ gridItem1.addEventListener("click", function() {
         }
     } else if(xTurn === false) {
         if(grids.grid1.used === false) {
-            gridItem1.textContent = "O"
+            gridItem1.textContent = "O";
             grids.grid1.value = "o";
             grids.grid1.used = true;
             console.log(grids.grid1);
@@ -183,7 +183,7 @@ gridItem1.addEventListener("click", function() {
 gridItem2.addEventListener("click", function() {
     if(xTurn === true) {
         if(grids.grid2.used === false) {
-            gridItem2.textContent = "X"
+            gridItem2.textContent = "X";
             grids.grid2.value = "x";
             grids.grid2.used = true;
             console.log(grids.grid2);
@@ -192,7 +192,7 @@ gridItem2.addEventListener("click", function() {
         }
     } else if(xTurn === false) {
         if(grids.grid2.used === false) {
-            gridItem2.textContent = "O"
+            gridItem2.textContent = "O";
             grids.grid2.value = "o";
             grids.grid2.used = true;
             console.log(grids.grid2);
@@ -207,7 +207,7 @@ gridItem2.addEventListener("click", function() {
 gridItem3.addEventListener("click", function() {
     if(xTurn === true) {
         if(grids.grid3.used === false) {
-            gridItem3.textContent = "X"
+            gridItem3.textContent = "X";
             grids.grid3.value = "x";
             grids.grid3.used = true;
             console.log(grids.grid3);
@@ -216,7 +216,7 @@ gridItem3.addEventListener("click", function() {
         }
     } else if(xTurn === false) {
         if(grids.grid3.used === false) {
-            gridItem3.textContent = "O"
+            gridItem3.textContent = "O";
             grids.grid3.value = "o";
             grids.grid3.used = true;
             console.log(grids.grid3);
@@ -231,7 +231,7 @@ gridItem3.addEventListener("click", function() {
 gridItem4.addEventListener("click", function() {
     if(xTurn === true) {
         if(grids.grid4.used === false) {
-            gridItem4.textContent = "X"
+            gridItem4.textContent = "X";
             grids.grid4.value = "x";
             grids.grid4.used = true;
             console.log(grids.grid4);
@@ -240,7 +240,7 @@ gridItem4.addEventListener("click", function() {
         }
     } else if(xTurn === false) {
         if(grids.grid4.used === false) {
-            gridItem4.textContent = "O"
+            gridItem4.textContent = "O";
             grids.grid4.value = "o";
             grids.grid4.used = true;
             console.log(grids.grid4);
@@ -255,7 +255,7 @@ gridItem4.addEventListener("click", function() {
 gridItem5.addEventListener("click", function() {
     if(xTurn === true) {
         if(grids.grid5.used === false) {
-            gridItem5.textContent = "X"
+            gridItem5.textContent = "X";
             grids.grid5.value = "x";
             grids.grid5.used = true;
             console.log(grids.grid5);
@@ -264,7 +264,7 @@ gridItem5.addEventListener("click", function() {
         }
     } else if(xTurn === false) {
         if(grids.grid5.used === false) {
-            gridItem5.textContent = "O"
+            gridItem5.textContent = "O";
             grids.grid5.value = "o";
             grids.grid5.used = true;
             console.log(grids.grid5);
@@ -279,7 +279,7 @@ gridItem5.addEventListener("click", function() {
 gridItem6.addEventListener("click", function() {
     if(xTurn === true) {
         if(grids.grid6.used === false) {
-            gridItem6.textContent = "X"
+            gridItem6.textContent = "X";
             grids.grid6.value = "x";
             grids.grid6.used = true;
             console.log(grids.grid6);
@@ -288,7 +288,7 @@ gridItem6.addEventListener("click", function() {
         }
     } else if(xTurn === false) {
         if(grids.grid6.used === false) {
-            gridItem6.textContent = "O"
+            gridItem6.textContent = "O";
             grids.grid6.value = "o";
             grids.grid6.used = true;
             console.log(grids.grid6);
@@ -303,7 +303,7 @@ gridItem6.addEventListener("click", function() {
 gridItem7.addEventListener("click", function() {
     if(xTurn === true) {
         if(grids.grid7.used === false) {
-            gridItem7.textContent = "X"
+            gridItem7.textContent = "X";
             grids.grid7.value = "x";
             grids.grid7.used = true;
             console.log(grids.grid7);
@@ -312,7 +312,7 @@ gridItem7.addEventListener("click", function() {
         }
     } else if(xTurn === false) {
         if(grids.grid7.used === false) {
-            gridItem7.textContent = "O"
+            gridItem7.textContent = "O";
             grids.grid7.value = "o";
             grids.grid7.used = true;
             console.log(grids.grid7);
@@ -327,7 +327,7 @@ gridItem7.addEventListener("click", function() {
 gridItem8.addEventListener("click", function() {
     if(xTurn === true) {
         if(grids.grid8.used === false) {
-            gridItem8.textContent = "X"
+            gridItem8.textContent = "X";
             grids.grid8.value = "x";
             grids.grid8.used = true;
             console.log(grids.grid8);
@@ -336,7 +336,7 @@ gridItem8.addEventListener("click", function() {
         }
     } else if(xTurn === false) {
         if(grids.grid8.used === false) {
-            gridItem8.textContent = "O"
+            gridItem8.textContent = "O";
             grids.grid8.value = "o";
             grids.grid8.used = true;
             console.log(grids.grid8);
@@ -351,7 +351,7 @@ gridItem8.addEventListener("click", function() {
 gridItem9.addEventListener("click", function() {
     if(xTurn === true) {
         if(grids.grid9.used === false) {
-            gridItem9.textContent = "X"
+            gridItem9.textContent = "X";
             grids.grid9.value = "x";
             grids.grid9.used = true;
             console.log(grids.grid9);
@@ -360,7 +360,7 @@ gridItem9.addEventListener("click", function() {
         }
     } else if(xTurn === false) {
         if(grids.grid9.used === false) {
-            gridItem9.textContent = "O"
+            gridItem9.textContent = "O";
             grids.grid9.value = "o";
             grids.grid9.used = true;
             console.log(grids.grid9);
